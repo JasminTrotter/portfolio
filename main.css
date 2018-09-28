@@ -13,8 +13,10 @@ body {
 
 nav,
 footer {
+  font-family: "Lato", sans-serif;
+  color: #FFFFFF;
   padding: 1% 0;
-  background-color: #aaa;
+  background-color: #315877;
 }
 
 nav > ul {
@@ -33,19 +35,25 @@ nav {
   z-index: 10;
 }
 
+.header-marg {
+  height: 50px;
+}
+
+h1, h2 {
+  color: #315877;
+  font-family: "Lato", sans-serif;
+}
+
 #headshot {
   border-radius: 50%;
   height: 25vh;
 }
 
-#bio {
-  background-color: #FFFFFF;
-  padding: 25px;
-}
-
 header {
   padding: 12% 0;
 }
+
+
 
 section {
   min-height: 200px;
@@ -57,6 +65,15 @@ section:nth-child(even) {
   background-color: #ddd;
 }
 
+#bio, #contact {
+  background-color: #FFFFFF;
+  padding: 25px;
+}
+
 .project-img {
   max-height: 300px;
+}
+
+address {
+  font-style: normal;
 }
