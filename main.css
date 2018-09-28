@@ -16,7 +16,7 @@ footer {
   font-family: "Lato", sans-serif;
   color: #FFFFFF;
   padding: 1% 0;
-  background-color: #315877;
+  background-color: #25599D;
 }
 
 nav > ul {
@@ -40,7 +40,7 @@ nav {
 }
 
 h1, h2 {
-  color: #315877;
+  color: #25599D;
   font-family: "Lato", sans-serif;
 }
 
@@ -58,12 +58,9 @@ header {
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
+
 }
 
-section:nth-child(even) {
-  background-color: #ddd;
-}
 
 #bio, #contact {
   background-color: #FFFFFF;
@@ -72,6 +69,7 @@ section:nth-child(even) {
 
 .project-img {
   max-height: 300px;
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.50);
 }
 
 address {
