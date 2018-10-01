@@ -3,9 +3,13 @@
 <head>
     <title>Jasmin Trotter | Web Developer Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Styles -->
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
 </head>
 <body>
     <nav role="navigation">
@@ -19,8 +23,8 @@
     <main role="main">
         <header role="banner">
             <h1>Jasmin Trotter</h1>
-            <img id="headshot" alt="Jasmin Trotter Headshot" src="http://i65.tinypic.com/2zdrsxj.jpg">
-            <p>Hi there! I &#128153;building Fullstack Web Apps.</p>
+            <img id="headshot" alt="Jasmin Trotter Headshot" src="images/tinyselfie.JPG">
+            <p class="bio-p">I &#128153; building Fullstack Web Apps!</p>
         </header>
 
         <!-- About Me -->
@@ -28,8 +32,8 @@
         <section id="bio">
             <hr>
             <h2>About Me</h2>
-            <p>I fell in love with web development when I discovered how much I enjoy building applications to manage my ballet instruction business. Coding is like a puzzle. When I put the pieces together correctly and it works I get a rush. I strive for cleanliness and simplicity and in my UX/UI and code, which improve with new project I create. A developer can always grow and perfect her craft. For that reason, I am a lifelong learner. 
-            When I'm not coding, I'm taking or teaching a dance class, travelling to explore a new city, or I'm at home eating doughnuts while surfing the web.</p>
+            <p class="bio-p">I fell in love with web development when I discovered how much I enjoy building applications to manage my ballet instruction business. Coding is like a puzzle. When I put the pieces together correctly and it works I get a rush. I strive for cleanliness and simplicity and in my UX/UI and code, which improve with new project I create. My layouts are responsive, with mobile-first design. A developer can always grow and perfect her craft. For that reason, I am a lifelong learner. 
+            When I'm not coding, I'm teaching a dance class, travelling to explore a new city, or I'm at home eating doughnuts while surfing the web.</p>
             <hr id="projects-anchor">
         </section>
 
@@ -40,59 +44,76 @@
         <h2>Projects</h2>
 
         <section>
-            <img class="project-img" src="https://camo.githubusercontent.com/a0a969974ad3e7521d50a15460d15eb3e6d264a2/687474703a2f2f6936332e74696e797069632e636f6d2f32757974366b342e706e67?raw=true">
-            <p>On Join Class, users (ballet students) can sign up for ballet class, view the schedule of classes, and cancel any current reservations.</p>
+            <h3>Join Class App</h3>
+            <img class="project-img" src="images/screenshots/join-class-screenshot.png" alt="join class screenshot">
+            <p class="project-description">On Join Class, users (ballet students) can sign up for ballet class, view the schedule of classes, and cancel any current reservations.</p>
 
-       
-            <button class="button" onClick="window.open('https://join-class.herokuapp.com/');">
-                <span class="icon">Live App</span>
-            </button>
-
-            <button class="button" onClick="window.open('https://github.com/JasminTrotter/Join-Class-App');">
-                <span class="icon">Repo</span>
-            </button>
-
-            <h3>Technologies</h3>
-            <h4>Front End</h4>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                </ul>
-            <h4>Backend</h4>
-                <ul>
-                    <li>Node.js + Express</li>
-                    <li>MLab</li>
-                    <li>Mocha + Chai</li>
-                    <li>Travis CI</li>
-                </ul>
-            <h4>Security</h4>
-                <ul>
-                    <li>JSON Web Tokens (user authentication)</li>
-                </ul>
-
+            <div class="tech">
+                <button class="more-button">Learn More <i class="fa fa-angle-double-right"></i></button>
+                <div class="tech-list hidden">
+                        <div class="live-repo">
+                            <button class="button" onClick="window.open('https://join-class.herokuapp.com/');">
+                                <span class="icon">Live App</span>
+                            </button>
+                            
+                            <button class="button" onClick="window.open('https://github.com/JasminTrotter/Join-Class-App');">
+                                <span class="icon">Repo</span>
+                            </button>
+                        </div>
+                        <div class="logo-container">
+                           
+                            <div class="logo-div"><img class="logo" src='images/logos/htmllogo.png' alt='HTML logo'><p>HTML5</p></div>
+                            <div class="logo-div"><img class="logo" src='images/logos/csslogo.png' alt='CSS logo'><p>CSS3</p></div>
+                            <div class="logo-div"><img class="logo" src='images/logos/javascriptlogo.png' alt='JavaScript logo'><p>JavaScript</p></div>
+                            <div class="logo-div"><img class="logo" src='images/logos/jquerylogo.png' alt='jQuery logo'><p>jQuery</p></div>
+                            <div class="logo-div"><img class="logo" src='images/logos/nodelogo.png' alt='Node logo'><p>Node.js</p></div>
+                            <div class="logo-div"><img class="logo" src='images/logos/expresslogo.jpg' alt='Express logo'><p>Express</p></div>
+                            <div class="logo-div"><img class="logo" src='images/logos/mlablogo.png' alt='M. lab logo'><p>MLab</p></div>
+                            <div class="logo-div"><img class="logo" src='images/logos/mochalogo.png' alt='mocha logo'><p>Mocha</p></div>
+                            <div class="logo-div"><img class="logo" src='images/logos/chailogo.png' alt='chai logo'><p>Chai</p></div>
+                            <div class="logo-div"><img class="logo" src='images/logos/traviscilogo.png' alt='travis C I logo'><p>Travis CI</p></div>
+                            <div class="logo-div"><img class="logo" src='images/logos/herokulogo.jpg' alt='heroku logo'><p>Heroku</p></div>
+                        </div>
+                        <button class="less-button"><i class="fa fa-angle-double-up"></i></button>
+                   
+                           
+                </div>
+                
+            </div>
+            
+            <hr> 
         </section>
 
         <section>
-            <img class="project-img" src="https://raw.githubusercontent.com/JasminTrotter/quotumblr/master/screenshots/homepage_screenshot.png?raw=true">
-            <p>On Join Class, users (ballet students) can sign up for ballet class, view the schedule of classes, and cancel any current reservations.</p>
-            
-            <button class="button" onClick="window.open('https://jasmintrotter.github.io/quotumblr/');">
-                <span class="icon">Live App</span>
-            </button>
+            <h3>Quotumblr</h3>
+            <img class="project-img" src="images/screenshots/quotumblr-screenshot.png" alt="quote tumbler screenshot">
+            <p class="project-description">On Quotumblr, the user signs in with their Tumblr username, then selects a text post from their Tumblr feed. Quotumblr chooses a random word from the selected post, then using FavQ's API, returns a quote containing that word.</p>
 
-            <button class="button" onClick="window.open('https://github.com/JasminTrotter/quotumblr');">
-                <span class="icon">Repo</span>
-            </button>
-
-            <h3>Technologies</h3>
-                <ul>
-                    <li>HTML5</li>
-                    <li>CSS3</li>
-                    <li>JavaScript</li>
-                    <li>jQuery</li>
-                </ul>
+            <div class="tech">
+                <button class="more-button">Learn More <i class="fa fa-angle-double-right"></i></button>
+                <div class="tech-list hidden">
+                    <div class="live-repo">
+                        <button class="button" onClick="window.open('https://jasmintrotter.github.io/quotumblr/');">
+                            <span class="icon">Live App</span>
+                        </button>
+                        
+                        <button class="button" onClick="window.open('https://github.com/JasminTrotter/quotumblr');">
+                            <span class="icon">Repo</span>
+                        </button>
+                    </div>
+                
+                    <div class="logo-container">
+                           
+                        <div class="logo-div"><img class="logo" src='images/logos/htmllogo.png' alt='HTML logo'><p>HTML5</p></div>
+                        <div class="logo-div"><img class="logo" src='images/logos/csslogo.png' alt='CSS logo'><p>CSS3</p></div>
+                        <div class="logo-div"><img class="logo" src='images/logos/javascriptlogo.png' alt='JavaScript logo'><p>JavaScript</p></div>
+                        <div class="logo-div"><img class="logo" src='images/logos/jquerylogo.png' alt='jQuery logo'><p>jQuery</p></div>
+                                
+                    </div>
+                    <button class="less-button"><i class="fa fa-angle-double-up"></i></button>
+                </div>
+            </div>
+            <hr>
 
         </section>
 
@@ -100,21 +121,31 @@
         <section id="contact">
             <h2>Contact</h2>
             <address>
-                jasminmtrotter@gmail.com 
-                <br> 
-                <button class="button" onClick="window.open('https://www.linkedin.com/in/jasminmtrotter/');">
-                    <span class="icon">LinkedIn</span>
-                </button>
-                <br>
-                Based in (but not limited to) Portland, OR.
+                <div class="contact-links">
+                    <div class="contact-link">
+                        <button onClick="window.open('mailto:jasminmtrotter@gmail.com');">
+                        <img src="images/logos/gmaillogo.png" class="logo" alt="g mail logo">
+                    </button> <a href="mailto:jasminmtrotter@gmail.com" target="_blank" class="contact-deet">jasminmtrotter@gmail.com </a></div>
+
+                    <div class="contact-link">
+                        <button onClick="window.open('https://www.linkedin.com/in/jasminmtrotter/');">
+                        <img src="images/logos/linkedinlogo.png" class="logo" alt="linked in logo">
+                    </button> <a href="https://www.linkedin.com/in/jasminmtrotter/" target="_blank" class="contact-deet">https://www.linkedin.com/in/jasminmtrotter/</a></div>
+
+                    <div class="contact-link">
+                        <button onClick="window.open('https://github.com/JasminTrotter');">
+                        <img src="images/logos/githublogo.png" class="logo" alt="git hub logo">
+                    </button> <a href="https://github.com/JasminTrotter" traget="_blank" class="contact-deet">https://github.com/JasminTrotter </a></div>
+                </div>
+                <p id="location">&#128205; Based in (but not limited to) Portland, OR.</p>
             </address>
         </section>
     
-        <footer role="content-info">
-            <p>built by Jasmin Trotter</p>
-        </footer>
+        
     </main>
-
+    <footer role="content-info">
+        <p>built by Jasmin Trotter</p>
+    </footer>
     <!-- Scripts -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="index.js"></script>
