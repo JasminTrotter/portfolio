@@ -55,12 +55,11 @@ h1, h2 {
 }
 
 #headshot {
-  border-radius: 50%;
-  height: 25vh;
+  height: 40vh;
 }
 
 header {
-  padding: 12% 0;
+  padding: 12% 0 5% 0;
 }
 
 
