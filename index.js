@@ -3,14 +3,24 @@
 
 $(document).ready(function() {
 
-
-  //expand and collapse project details
+  //expand project details from project thumbnail
   $(listenExpand);
 
   function listenExpand() {
-    $('.tech').on('click', '.more-button', function (event) {
-      $(event.currentTarget).next('.tech-list').removeClass('hidden');
-      $(event.currentTarget).addClass('hidden');
+    $('.project-img').click((e) => {
+      $(e.currentTarget).siblings('.tech').find('.tech-list').toggleClass('hidden');
+      $(e.currentTarget).siblings('.tech').find('.more-button').toggleClass('hidden');
+      listenCollapse();
+    });
+  }
+
+  //expand and collapse project details from `Learn More` button
+  $(listenExpand2);
+
+  function listenExpand2() {
+    $('.tech').on('click', '.more-button', function (e) {
+      $(e.currentTarget).next('.tech-list').removeClass('hidden');
+      $(e.currentTarget).addClass('hidden');
       listenCollapse();
     });
   }
@@ -19,7 +29,7 @@ $(document).ready(function() {
     $('.less-button').click((e) => {
       $(e.currentTarget).parent().addClass('hidden');
       $(e.currentTarget).closest('.tech-list').prev().removeClass('hidden');
-      listenExpand();
+      listenExpand2();
     });
   }
 

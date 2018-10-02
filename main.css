@@ -159,8 +159,13 @@ a {
 
 }
 
-p, .contact-deet {
+p {
   font-size: 10px;
+} 
+
+.contact-deet {
+  font-size: 12px;
+  display: block;
 }
 
 @media only screen and (max-width: 768px) {
