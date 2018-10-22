@@ -54,7 +54,7 @@ $(document).ready(function() {
 
   $('#contact-link').click(() => {
     $('html, body').animate({
-      scrollTop: ($('#contact').offset().top)
+      scrollTop: ($('.contact').offset().top)
     },1000);
   });
 

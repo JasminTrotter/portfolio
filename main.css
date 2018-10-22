@@ -18,16 +18,17 @@ body {
 
 
 main {
-  width: 70%;
-  margin: auto;
+
+  background-color: #FFFFFF;
 }
+
 
 nav,
 footer {
   font-family: "Lato", sans-serif;
   color: #FFFFFF;
   padding: 1% 0;
-  background-color: #25599D;
+  background-color: #4B5581;
 }
 
 nav > ul {
@@ -48,32 +49,54 @@ nav {
   z-index: 10;
 }
 
+h1 {
+  font-size: 40px;
+}
 
 h1, h2 {
-  color: #25599D;
+  color: #4B5581;
   font-family: "Lato", sans-serif;
+}
+
+h3 {
+  font-size: 20px;
 }
 
 #headshot {
   height: 40vh;
+  /*border: #47342B 10px solid;*/
+  border-radius: 3px;
+}
+
+#bio {
+  max-width: 600px;
 }
 
 header {
-  padding: 12% 0 5% 0;
+  padding: 10% 0 3% 0;
+  background-color: #D1E0CA;
+  width: 100%;
 }
 
 
 
-section {
+.project-container section {
   min-height: 200px;
   padding: 6% 0;
-
+  max-width: 500px;
+  margin: auto;
 }
 
 #bio, .project-description {
   margin: 20px;
   font-size: 16px;
 }
+
+#bio {
+  margin: auto;
+
+}
+
 
 .bio-p {
   font-size: 16px;
@@ -85,6 +108,24 @@ section {
   cursor: pointer;
 }
 
+
+.projects-header {
+  background-color: #D1E0CA;
+  padding: 20px;
+  font-size: 40px;
+      width: 100vw;
+    left: 0;
+    position: absolute;
+}
+
+.project-container {
+  padding-top: 150px;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .logo {
   height: 30px;
 }
@@ -93,17 +134,26 @@ address {
   font-style: normal;
 }
 
+.logo-container {
+  margin-top: 30px;
+}
+
 .logo-container, .contact-links {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: 40px;
+  padding-top: 40px;
 }
 
 .more-button {
-  
+  padding: 10px;
+  color: #47342B;
+  font-size: 15px;
+  background-color: #D1E0CA;
   margin-bottom: 40px;
+  border-radius: 3px;
+  border: #47342B 3px solid;
 
 }
 
@@ -168,6 +218,17 @@ p {
   display: block;
 }
 
+.contact {
+  margin: 50px auto;
+
+}
+
+@media only screen and (max-width: 1024px) {
+  .project-container section {
+    margin: 0px 20px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .contact-links {
     display: block;
@@ -176,6 +237,10 @@ p {
 
 
 @media only screen and (max-width: 425px) {
+
+  header {
+    padding: 15% 0 3% 0;
+  }
 
   .project-img, .tech-list {
     width: 90%;
@@ -200,7 +265,9 @@ p {
 }
 
 @media only screen and (max-width: 375px) {
-
+   .bio-p {
+    padding: 15px;
+  }
   main {
     width: 100%;
   }
