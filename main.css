@@ -144,6 +144,10 @@ address {
   align-items: center;
   flex-wrap: wrap;
   justify-content: center;
+  
+}
+
+.contact-links {
   padding-top: 40px;
 }
 
