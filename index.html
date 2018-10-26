@@ -9,15 +9,24 @@
     <link rel="stylesheet" type="text/css" href="main.css">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="./images/favicon.ico"/>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
     <nav role="navigation">
-        <ul>
+        <ul class="mobileNav hidden">
             <li id="home-link">home</li>
             <li id="about-me-link">about me</li>
             <li id="projects-link">projects</li>
             <li><a href="./JasminTrotter_webdev.pdf" target="_blank">resume</a></li>
+            <li id="contact-link">contact</li>  
+        </ul>
+        <ul class="desktopNav">
+            <li id="home-link">home</li>
+            <li id="about-me-link">about me</li>
+            <li id="projects-link">projects</li>
+        <!-- <li><a href="./JasminTrotter_webdev.pdf" target="_blank">resume</a></li>-->
             <li id="contact-link">contact</li>            
         </ul>
     </nav>
