@@ -18,7 +18,7 @@ $(document).ready(function() {
   $(listenExpand2);
 
   function listenExpand2() {
-    $('.tech').on('click', '.more-button', function (e) {
+    $('.tech').on('click', '.more-button', (e) => {
       $(e.currentTarget).next('.tech-list').removeClass('hidden');
       $(e.currentTarget).addClass('hidden');
       listenCollapse();
@@ -26,10 +26,17 @@ $(document).ready(function() {
   }
 
   function listenCollapse() {
-    $('.less-button').click((e) => {
+    $('.less-button').on('click', (e) => {
       $(e.currentTarget).parent().addClass('hidden');
       $(e.currentTarget).closest('.tech-list').prev().removeClass('hidden');
       listenExpand2();
+    });
+  }
+
+  //hamburger
+  function hamburger() {
+    $('.hamburger').click((e) => {
+      $('.mobileNav').toggleClass('hidden');
     });
   }
 

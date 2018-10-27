@@ -20,6 +20,7 @@ body {
 main {
   margin: auto;
   background-color: #FFFFFF;
+  width: 90%;
 }
 
 
@@ -36,17 +37,31 @@ footer {
   padding: 0px;
   margin-left: auto;
 }
+.mobileNav {
+  position: absolute;
+  top: 55px;
+  background-color: #4B5581;
+  padding-right: 35px;
+  padding-bottom: 35px;
+}
+
+.hamburger {
+/*  display: none;*/
+  color: white;
+  float: left;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  font-size: 40px;
+}
 
 .mobileNav li {
-    float: left;
     display: block;
-    text-align: center;
+    text-align: left;
+    line-height: 50px;
+    top: 20px;
 }
 
-.mobileNav li:hover {
-    background-color: #ddd;
-    color: black;
-}
 
 
 li {
