@@ -39,7 +39,7 @@ footer {
 }
 .mobileNav {
   position: absolute;
-  top: 45px;
+  top: 30px;
   background-color: #4B5581;
   padding-right: 35px;
   padding-bottom: 35px;
@@ -51,8 +51,8 @@ footer {
   float: left;
   position: absolute;
   left: 15px;
-  top: 15px;
-  font-size: 30px;
+  top: 10px;
+  font-size: 20px;
 }
 
 .mobileNav li {
@@ -254,10 +254,6 @@ p {
   display: block;
 }
 
-/*.contact {
-  margin: 50px auto;
-
-}*/
 
 #location {
   margin: 30px;
@@ -279,10 +275,10 @@ p {
   .desktopNav li {
     display: none;
   }
-  .desktopNav {
+/*  .desktopNav {
     height: 30px;
 
-  }
+  }*/
 }
 
 
