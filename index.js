@@ -33,36 +33,50 @@ $(document).ready(function() {
     });
   }
 
-  //hamburger
+  $(hamburger);
+  //hamburger menu
   function hamburger() {
-    $('.hamburger').click((e) => {
+    $('.hamburger').on('click', (e) => {
       $('.mobileNav').toggleClass('hidden');
     });
   }
 
+  //if the viewport is being widdened from mobile, 
+  //remove the opened hamburger menu
+  $(window).resize(function () {
+    var viewportWidth = $(window).width();
+    if (viewportWidth < 768) {
+            $(".mobileNav").addClass("hidden");
+    }
+});
+
 	// scroll on navbar links
-  $('#home-link').click(() => {
+  $('.home-link').click(() => {
     $('html, body').animate({
       scrollTop: ($('html').offset().top)
     },1000);
+    $('.mobileNav').addClass('hidden');
   });
 
-  $('#about-me-link').click(() => {
+  $('.about-me-link').click(() => {
     $('html, body').animate({
       scrollTop: ($('#about-me-anchor').offset().top - 80)
     },1000);
+    $('.mobileNav').addClass('hidden');
   });
 
-  $('#projects-link').click(() => {
+  $('.projects-link').click(() => {
     $('html, body').animate({
       scrollTop: ($('#projects-anchor').offset().top - 80)
     },1000);
+    $('.mobileNav').addClass('hidden');
   });
 
-  $('#contact-link').click(() => {
+  $('.contact-section-link').click(() => {
     $('html, body').animate({
       scrollTop: ($('.contact').offset().top)
     },1000);
+    $('.mobileNav').addClass('hidden');
   });
 
 });

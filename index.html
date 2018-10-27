@@ -15,25 +15,25 @@
 </head>
 <body>
     <nav role="navigation">
-      <!--   <button class="hamburger"><i class="fa fa-bars"></i></button>
+        <button class="hamburger" type="button"><i class="fa fa-bars"></i></button>
         <ul class="mobileNav hidden">
-            <li id="home-link">home</li>
-            <li id="about-me-link">about me</li>
-            <li id="projects-link">projects</li>
+            <li class="home-link">home</li>
+            <li class="about-me-link">about me</li>
+            <li class="projects-link">projects</li>
             <li><a href="./JasminTrotter_webdev.pdf" target="_blank">resume</a></li>
-            <li id="contact-link">contact</li>  
-        </ul> -->
+            <li class="contact-link">contact</li>  
+        </ul>
         <ul class="desktopNav">
-            <li id="home-link">home</li>
-            <li id="about-me-link">about me</li>
-            <li id="projects-link">projects</li>
-            <!-- <li><a href="./JasminTrotter_webdev.pdf" target="_blank">resume</a></li> -->
-            <li id="contact-link">contact</li>            
+            <li class="home-link">home</li>
+            <li class="about-me-link">about me</li>
+            <li class="projects-link">projects</li>
+            <li><a href="./JasminTrotter_webdev.pdf" target="_blank">resume</a></li>
+            <li class="contact-section-link">contact</li>            
         </ul>
     </nav>
     <header role="banner">
             <h1>Jasmin Trotter</h1>
-            <img id="headshot" alt="Jasmin Trotter Headshot" src="images/tinyselfie.JPG">
+            <div id="headshot" role="img" aria-label="Jasmin Trotter headshot"></div>
             <p class="bio-p">I &#128156; building Fullstack Web Apps!</p>
     </header>
     <main role="main">
@@ -102,8 +102,8 @@
                                 <div class="logo-div"><img class="logo" src='images/logos/traviscilogo.png' alt='travis C I logo'><p>Travis CI</p></div>
                                 <div class="logo-div"><img class="logo" src='images/logos/herokulogo.jpg' alt='heroku logo'><p>Heroku</p></div>
                  
-                            <p class="project-description">
-                                Student Portal is a full stack, responsive web application designed to allow ballet students to create an account and access their own dashboard. This app utilizes MongoDB for a database, Express for the server side, React and Redux for the client side, JSON Web Tokens for authentication, and Stripe API for payment processing.</p>
+                            <!-- <p class="project-description">
+                                Student Portal is a full stack, responsive web application designed to allow ballet students to create an account and access their own dashboard. This app utilizes MongoDB for a database, Express for the server side, React and Redux for the client side, JSON Web Tokens for authentication, and Stripe API for payment processing.</p> -->
                             <p class="project-description">Future features: students will be able to view a history of their class attendances, and see how many classes are remaining on their most recent class package purchase. Integrate features of Join Class (see below) so students can take care of scheduling and payment all in one app. Full testing in Enzyme is in progress.</p>
   
                                 
@@ -199,17 +199,20 @@
                     <div class="contact-link">
                         <button onClick="window.open('mailto:jasminmtrotter@gmail.com');">
                         <img src="images/logos/gmaillogo.png" class="logo" alt="g mail logo">
-                    </button> <a href="mailto:jasminmtrotter@gmail.com" target="_blank" class="contact-deet">jasminmtrotter@gmail.com </a></div>
+                        </button> 
+                    </div>
 
                     <div class="contact-link">
                         <button onClick="window.open('https://www.linkedin.com/in/jasminmtrotter/');">
                         <img src="images/logos/linkedinlogo.png" class="logo" alt="linked in logo">
-                    </button> <a href="https://www.linkedin.com/in/jasminmtrotter/" target="_blank" class="contact-deet">https://www.linkedin.com/in/jasminmtrotter/</a></div>
+                        </button>
+                    </div>
 
                     <div class="contact-link">
                         <button onClick="window.open('https://github.com/JasminTrotter');">
                         <img src="images/logos/githublogo.png" class="logo" alt="git hub logo">
-                    </button> <a href="https://github.com/JasminTrotter" traget="_blank" class="contact-deet">https://github.com/JasminTrotter </a></div>
+                        </button>
+                    </div>
                 </div>
                 <p id="location">&#128205; Based in (but not limited to) Portland, OR.</p>
             </address>
