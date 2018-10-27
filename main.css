@@ -51,7 +51,7 @@ footer {
   float: left;
   position: absolute;
   left: 15px;
-  top: 10px;
+  top: 15px;
   font-size: 20px;
 }
 
@@ -275,10 +275,10 @@ p {
   .desktopNav li {
     display: none;
   }
-/*  .desktopNav {
-    height: 30px;
+  .desktopNav {
+    height: 15px;
 
-  }*/
+  }
 }
 
 
