@@ -1,82 +1,60 @@
-
 'use strict';
 
-$(document).ready(function() {
+$(document).ready(function () {
 
-  //expand project details from project thumbnail
-  $(listenExpand);
-
-  function listenExpand() {
+  function expandTechList() {
     $('.project-img').click((e) => {
       $(e.currentTarget).siblings('.tech').find('.tech-list').toggleClass('hidden');
       $(e.currentTarget).siblings('.tech').find('.more-button').toggleClass('hidden');
-      listenCollapse();
+      collapseLearnMore();
     });
   }
 
-  //expand and collapse project details from `Learn More` button
-  $(listenExpand2);
-
-  function listenExpand2() {
+  function expandLearnMore() {
     $('.tech').on('click', '.more-button', (e) => {
       $(e.currentTarget).next('.tech-list').removeClass('hidden');
       $(e.currentTarget).addClass('hidden');
-      listenCollapse();
+      collapseLearnMore();
     });
   }
 
-  function listenCollapse() {
+  function collapseLearnMore() {
     $('.less-button').on('click', (e) => {
       $(e.currentTarget).parent().addClass('hidden');
       $(e.currentTarget).closest('.tech-list').prev().removeClass('hidden');
-      listenExpand2();
+      expandLearnMore();
     });
   }
 
-  $(hamburger);
-  //hamburger menu
-  function hamburger() {
-    $('.hamburger').on('click', (e) => {
+  function onClickHamburgerMenu() {
+    $('.hamburger').on('click', () => {
       $('.mobileNav').toggleClass('hidden');
     });
   }
 
-  //if the viewport is being widdened from mobile, 
-  //remove the opened hamburger menu
-  $(window).resize(function () {
+  function onViewportResize() {
     var viewportWidth = $(window).width();
     if (viewportWidth < 768) {
-            $(".mobileNav").addClass("hidden");
+      $('.mobileNav').addClass('hidden');
     }
-});
+  }
 
-	// scroll on navbar links
-  $('.home-link').click(() => {
-    $('html, body').animate({
-      scrollTop: ($('html').offset().top)
-    },1000);
-    $('.mobileNav').addClass('hidden');
-  });
+  function onClickNavLink(link, anchor, offset) {
+    $(link).click(() => {
+      $('html, body').animate({
+        scrollTop: ($(anchor).offset().top - offset)
+      }, 1000);
+      $('.mobileNav').addClass('hidden');
+    });
+  }
 
-  $('.about-me-link').click(() => {
-    $('html, body').animate({
-      scrollTop: ($('#about-me-anchor').offset().top - 80)
-    },1000);
-    $('.mobileNav').addClass('hidden');
-  });
-
-  $('.projects-link').click(() => {
-    $('html, body').animate({
-      scrollTop: ($('#projects-anchor').offset().top - 80)
-    },1000);
-    $('.mobileNav').addClass('hidden');
-  });
-
-  $('.contact-section-link').click(() => {
-    $('html, body').animate({
-      scrollTop: ($('.contact').offset().top)
-    },1000);
-    $('.mobileNav').addClass('hidden');
-  });
+  $(window).resize(onViewportResize);
+  $(expandTechList);
+  $(expandLearnMore);
+  $(onClickHamburgerMenu);
+  $(onClickNavLink('.home-link', 'html', 0));
+  $(onClickNavLink('.about-me-link', '#about-me-anchor', 80));
+  $(onClickNavLink('.projects-link', '#projects-anchor', 80));
+  $(onClickNavLink('.contact-section-link', '.contact', 0));
 
 });
