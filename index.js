@@ -48,6 +48,17 @@ $(document).ready(function () {
     });
   }
 
+  function handleThumbnailHover() {
+    $('.project-img-container').hover(
+      function () {
+        $(this).append($("<div class='live-app-info'>Click to View Live App</div>"));
+      }, function () {
+        $(this).find("div").last().remove();
+      }
+    );
+  }
+
+  $(handleThumbnailHover);
   $(window).resize(onViewportResize);
   $(expandTechList);
   $(expandLearnMore);
