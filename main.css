@@ -62,8 +62,6 @@ footer {
     top: 20px;
 }
 
-
-
 li {
   list-style: none;
   cursor: pointer;
@@ -110,11 +108,20 @@ header {
   width: 100%;
 }
 
+/* .live-app-info {
+  position: relative;
+  bottom: 40px;
+} */
 
+.placeholder {
+  height: 40px;
+  z-index: -1;
+}
 
 .project-container section {
   min-height: 200px;
   padding: 6% 0;
+  width: 80%;
   max-width: 500px;
   margin: auto;
 }
@@ -128,7 +135,6 @@ header {
   margin: auto;
 
 }
-
 
 .bio-p {
   font-size: 16px;
