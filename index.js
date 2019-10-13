@@ -52,10 +52,8 @@ $(document).ready(function () {
     $('.project-img-container').hover(
       function () {
         $(this).append($("<div class='live-app-info'>Click to View Live App</div>"));
-        $(this).find('.placeholder').addClass('hidden');
       }, function () {
         $(this).find("div").last().remove();
-        $(this).find('.placeholder').removeClass('hidden');
       }
     );
   }

@@ -90,7 +90,6 @@ h3 {
 
 #headshot {
   height: 40vh;
-  /*border: #47342B 10px solid;*/
   border-radius: 3px;
   background-image: url("images/tinyselfie.JPG");
   background-size: contain; 
@@ -108,11 +107,6 @@ header {
   width: 100%;
 }
 
-/* .live-app-info {
-  position: relative;
-  bottom: 40px;
-} */
-
 .placeholder {
   height: 40px;
   z-index: -1;
@@ -124,6 +118,10 @@ header {
   width: 80%;
   max-width: 500px;
   margin: auto;
+}
+
+.project-img-container {
+  display: inline-block;
 }
 
 #bio, .project-description {
@@ -146,6 +144,9 @@ header {
   cursor: pointer;
 }
 
+.live-app-info {
+  position: absolute;
+}
 
 .projects-header {
   background-color: #D1E0CA;
@@ -159,8 +160,6 @@ header {
 .project-container {
   padding-top: 150px;
   align-items: center;
-  display: flex;
-  flex-wrap: wrap;
   justify-content: center;
 }
 
@@ -195,12 +194,12 @@ address {
   background-color: #D1E0CA;
   margin-bottom: 40px;
   border-radius: 3px;
-  border: #47342B 3px solid;
+  border: #47342B 1px solid;
 
 }
 
 .tech {
-  text-align: left;
+  text-align: center;
 }
  
 .tech-list {
