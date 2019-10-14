@@ -20,7 +20,8 @@ body {
 main {
   margin: auto;
   background-color: #FFFFFF;
-  width: 90%;
+  width: 80%;
+  max-width: 600px;
 }
 
 
@@ -152,9 +153,9 @@ header {
   background-color: #D1E0CA;
   padding: 20px;
   font-size: 40px;
-      width: 100vw;
-    left: 0;
-    position: absolute;
+  width: 100vw;
+  left: 0;
+  position: absolute;
 }
 
 .project-container {
